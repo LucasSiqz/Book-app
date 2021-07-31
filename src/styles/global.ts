@@ -1,6 +1,18 @@
-import { createGlobalStyle } from 'styled-components'
+import {
+  createGlobalStyle,
+  css,
+  DefaultTheme,
+  GlobalStyleComponent
+} from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
+type GlobalStylesProps = {
+  removeBg?: boolean
+}
+
+const GlobalStyles: GlobalStyleComponent<
+  GlobalStylesProps,
+  DefaultTheme
+> = createGlobalStyle`
 
   @font-face {
     font-family: 'SFProDisplay';
@@ -32,10 +44,16 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
-  body {
-    font-size: 1.6rem;
-    font-family: SFProDisplay -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-  }
+  ${({ theme, removeBg }) => css`
+    body {
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+      ${!removeBg &&
+      css`
+        background-color: ${theme.colors.background};
+      `}
+    }
+  `}
 `
 
 export default GlobalStyles

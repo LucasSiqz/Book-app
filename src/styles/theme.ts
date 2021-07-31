@@ -7,6 +7,8 @@ export default {
     radius: '0.4rem'
   },
   font: {
+    family:
+      "SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
     bold: 600,
@@ -21,7 +23,18 @@ export default {
     }
   },
   colors: {
-    white: '#FAFAFA'
+    background: '#FFFBF7',
+    lightPink: '#FFF6E5',
+    pink: '#FF6978',
+    lightGray: '#EAEAEA',
+    gray: '#BFBEBF',
+    darkGray: '#3F4043',
+    black: '#000000',
+    blue: '#4ABDF1',
+    white: '#FEFEFE',
+    beige: '#EEF5DB',
+    darkbeige: '#D6D1B1',
+    red: '#FF6347'
   },
   spacings: {
     xxsmall: '0.8rem',
