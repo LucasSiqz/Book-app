@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 33.5rem;
@@ -31,7 +32,7 @@ export const SubInfo = styled.div`
   align-items: center;
 
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #6a6767;
   }
 `

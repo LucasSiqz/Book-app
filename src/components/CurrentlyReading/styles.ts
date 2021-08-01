@@ -90,7 +90,7 @@ export const WaveCircle = styled.img`
 `
 
 export const Rectangle = styled.img`
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   margin-right: -2.3rem;
 `
 
