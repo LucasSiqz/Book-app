@@ -4,7 +4,7 @@ import { SearchIcon } from '../Icons'
 import TextField, { TextFieldProps } from '.'
 
 export default {
-  title: 'Form/TextField',
+  title: 'TextField',
   component: TextField,
   args: {
     name: 'book',

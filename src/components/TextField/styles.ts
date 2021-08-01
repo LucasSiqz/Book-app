@@ -12,6 +12,7 @@ export const InputWrapper = styled.div`
     background: ${theme.colors.white};
     border-radius: 1rem;
     padding: 0 ${theme.spacings.xsmall};
+    box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
 
     &:focus-within {
       box-shadow: 0 0 0.5rem ${theme.colors.pink};

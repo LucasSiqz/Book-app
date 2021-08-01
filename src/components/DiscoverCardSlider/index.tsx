@@ -34,14 +34,7 @@ const settings: SliderSettings = {
       breakpoint: 570,
       settings: {
         arrows: false,
-        slidesToShow: 1.3
-      }
-    },
-    {
-      breakpoint: 375,
-      settings: {
-        arrows: false,
-        slidesToShow: 1.1
+        slidesToShow: 1.35
       }
     }
   ],

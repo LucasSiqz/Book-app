@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.footer`
   width: 100%;
   position: fixed;
+  bottom: 0;
 `
 
 export const Navigation = styled.nav`
