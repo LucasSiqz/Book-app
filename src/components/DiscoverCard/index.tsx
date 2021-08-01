@@ -10,10 +10,10 @@ export type DiscoverCardProps = {
 }
 
 const DiscoverCard = ({
-  title = 'Hooked',
-  author = 'Nir Eyal',
-  readCount = 120,
-  image = '/img/Book.png'
+  title,
+  author,
+  readCount,
+  image
 }: DiscoverCardProps) => (
   <S.Wrapper>
     <S.Info>
@@ -27,6 +27,7 @@ const DiscoverCard = ({
     </S.Info>
     <S.Image src={image} alt={`${title} book cover`} />
 
+    {/* Visual Effects */}
     <S.Triangle src="img/triangle.svg" />
     <S.Rectangle src="img/rectangle.svg" />
     <S.BorderCircle src="img/border-circle.svg" />

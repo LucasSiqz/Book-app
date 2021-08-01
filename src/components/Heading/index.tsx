@@ -10,10 +10,7 @@ export type HeadingProps = {
   }
 }
 
-const Heading = ({
-  title = 'Discover new book',
-  nav = { title: 'More', path: '/books' }
-}: HeadingProps) => (
+const Heading = ({ title, nav }: HeadingProps) => (
   <S.Wrapper>
     <S.Title>{title}</S.Title>
     <S.Nav aria-labelledby="section navigation">

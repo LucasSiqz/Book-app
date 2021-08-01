@@ -61,6 +61,7 @@ export const Chapter = styled.div`
     }
   `}
 `
+
 export const RightEffect = styled.div`
   position: absolute;
   overflow: hidden;
@@ -79,6 +80,7 @@ export const BottomCircle = styled.img`
   margin-right: -2.2rem;
   margin-top: 2.2rem;
 `
+
 export const WaveCircle = styled.img`
   width: 8rem;
   height: 8rem;
@@ -86,6 +88,7 @@ export const WaveCircle = styled.img`
   margin-right: -3.6rem;
   transform: rotate(-25deg);
 `
+
 export const Rectangle = styled.img`
   margin-top: 5.5rem;
   margin-right: -2.3rem;

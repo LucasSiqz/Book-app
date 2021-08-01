@@ -10,10 +10,10 @@ export type CurrentlyReadingProps = {
 }
 
 const CurrentlyReading = ({
-  title = 'Originals',
-  author = 'Adam Grant',
-  currentChapter = 2,
-  chapterCount = 9
+  title,
+  author,
+  currentChapter,
+  chapterCount
 }: CurrentlyReadingProps) => (
   <S.Wrapper>
     <S.Image src="img/BookCover.png" />
@@ -28,6 +28,8 @@ const CurrentlyReading = ({
         <p>{currentChapter}</p>
         <p>{`From ${chapterCount}`}</p>
       </S.Chapter>
+
+      {/* Visual Effects */}
       <S.TopCircle src="img/topCircle.svg" />
       <S.RightEffect>
         <S.WaveCircle src="img/waveCircle.svg" />

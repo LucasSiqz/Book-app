@@ -4,7 +4,7 @@ export type WelcomeMessageProps = {
   name: string
 }
 
-const WelcomeMessage = ({ name = 'Mehmed Al Fatih' }: WelcomeMessageProps) => (
+const WelcomeMessage = ({ name }: WelcomeMessageProps) => (
   <S.Wrapper>
     <h2>Hi,</h2>
     <S.Name>{name}</S.Name>
