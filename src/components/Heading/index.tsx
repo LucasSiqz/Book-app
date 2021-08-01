@@ -16,7 +16,7 @@ const Heading = ({
 }: HeadingProps) => (
   <S.Wrapper>
     <S.Title>{title}</S.Title>
-    <S.Nav aria-labelledby="footer resources">
+    <S.Nav aria-labelledby="section navigation">
       <Link href={`${nav.path}`}>
         <a>{nav.title}</a>
       </Link>
