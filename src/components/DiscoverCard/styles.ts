@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +11,7 @@ export const Wrapper = styled.main`
     border-radius: ${theme.border.radius};
     padding: 1.5rem 2rem;
     overflow: hidden;
-    max-width: 27.2rem;
+    max-width: 30.2rem;
   `}
 `
 

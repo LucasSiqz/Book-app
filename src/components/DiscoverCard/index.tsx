@@ -26,6 +26,7 @@ const DiscoverCard = ({
       </S.Read>
     </S.Info>
     <S.Image src={image} alt={`${title} book cover`} />
+
     <S.Triangle src="img/triangle.svg" />
     <S.Rectangle src="img/rectangle.svg" />
     <S.BorderCircle src="img/border-circle.svg" />
