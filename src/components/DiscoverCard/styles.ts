@@ -50,7 +50,7 @@ export const Read = styled.div`
     }
 
     p:first-child {
-      font-weight: ${theme.font.bold};
+      font-weight: bold;
     }
   `}
 `

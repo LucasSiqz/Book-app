@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
     }
 
     @media (max-width: 570px) {
-      .slick-active {
+      .slick-slide {
         transform: scale(0.95);
       }
       .slick-current {

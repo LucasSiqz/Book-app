@@ -26,6 +26,7 @@ export default {
     background: '#FFFBF7',
     lightPink: '#FFF6E5',
     pink: '#FF6978',
+    alternativeGray: '#74776D',
     lightGray: '#EAEAEA',
     gray: '#BFBEBF',
     darkGray: '#3F4043',
