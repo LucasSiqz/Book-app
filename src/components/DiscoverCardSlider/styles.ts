@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       overflow-x: hidden;
     }
 

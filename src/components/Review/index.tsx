@@ -4,6 +4,7 @@ export type ReviewProps = {
   title: string
   author: string
   description: string
+  image?: string
   viewsCount: number
   weeksAgo: number
 }
@@ -12,11 +13,12 @@ const Review = ({
   title,
   author,
   description,
+  image,
   viewsCount,
   weeksAgo
 }: ReviewProps) => (
   <S.Wrapper>
-    <S.Image src="img/Review.png" alt={`${title}`} />
+    <S.Image src={image || 'img/Review.png'} alt={`${title}`} />
 
     <S.Info>
       <S.Title>{title}</S.Title>

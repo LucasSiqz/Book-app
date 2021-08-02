@@ -5,6 +5,7 @@ import * as S from './styles'
 export type CurrentlyReadingProps = {
   title: string
   author: string
+  image?: string
   currentChapter: number
   chapterCount: number
 }
@@ -12,11 +13,12 @@ export type CurrentlyReadingProps = {
 const CurrentlyReading = ({
   title,
   author,
+  image,
   currentChapter,
   chapterCount
 }: CurrentlyReadingProps) => (
   <S.Wrapper>
-    <S.Image src="img/BookCover.png" />
+    <S.Image src={image || 'img/BookCover.png'} />
 
     <S.Info>
       <S.Title>{title}</S.Title>
