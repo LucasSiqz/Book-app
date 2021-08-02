@@ -55,5 +55,5 @@ export const Grid = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 4rem;
-  padding: 0 2rem;
+  padding: 0 2rem 9rem 2rem;
 `
