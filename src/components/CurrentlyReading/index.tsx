@@ -43,7 +43,7 @@ const CurrentlyReading = ({
         <S.Rectangle src="img/rectangle.svg" />
       </S.RightEffect>
       <S.RightEffect>
-        <S.BorderCircle src="img/border-circle.svg" />
+        <S.BorderCircle src="img/borderCircle.svg" />
       </S.RightEffect>
     </S.Info>
   </S.Wrapper>

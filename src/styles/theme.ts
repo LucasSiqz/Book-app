@@ -35,7 +35,8 @@ export default {
     white: '#FEFEFE',
     beige: '#EEF5DB',
     darkbeige: '#D6D1B1',
-    red: '#FF6347'
+    red: '#FF6347',
+    highlight: '#FFF6E5'
   },
   spacings: {
     xxsmall: '0.8rem',

@@ -55,7 +55,10 @@ export const Read = styled.div`
   `}
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+  width: 7.3rem;
+  height: 10.9rem;
+`
 
 export const Triangle = styled.img`
   position: absolute;

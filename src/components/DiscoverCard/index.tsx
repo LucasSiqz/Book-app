@@ -30,7 +30,7 @@ const DiscoverCard = ({
     {/* Visual Effects */}
     <S.Triangle src="img/triangle.svg" />
     <S.Rectangle src="img/rectangle.svg" />
-    <S.BorderCircle src="img/border-circle.svg" />
+    <S.BorderCircle src="img/borderCircle.svg" />
     <S.WaveCircle src="img/waveCircle2.svg" />
   </S.Wrapper>
 )
