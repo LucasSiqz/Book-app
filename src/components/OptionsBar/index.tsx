@@ -5,7 +5,7 @@ import * as S from './styles'
 const OptionsBar = () => (
   <S.Wrapper>
     <S.Options ria-labelledby="options">
-      <S.Item className="active">
+      <S.Item>
         <BookOpenIcon />
         <p>Read</p>
       </S.Item>

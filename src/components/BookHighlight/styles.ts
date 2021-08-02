@@ -17,8 +17,8 @@ export const ArrowButton = styled.button`
     background: none;
     cursor: pointer;
     height: fit-content;
-    padding-top: 5.5rem;
-    padding-left: 3.3rem;
+    margin-top: 5.5rem;
+    margin-left: 3.3rem;
     transition: opacity ${theme.transition.default};
 
     &:hover {
@@ -61,7 +61,7 @@ export const WaveCircleSmall = styled.img`
   width: 4.8rem;
   height: 4.8rem;
   top: 22.5rem;
-  right: 10.2rem;
+  right: 9.2rem;
 `
 
 export const BorderCircle = styled.img`
@@ -69,7 +69,7 @@ export const BorderCircle = styled.img`
   width: 2.4rem;
   height: 2.4rem;
   top: 8.7rem;
-  right: 11rem;
+  right: 10.2rem;
 `
 
 export const DarkBlueCircle = styled.img`

@@ -8,6 +8,7 @@ import DiscoverCardSlider from 'components/DiscoverCardSlider'
 import CurrentlyReading from 'components/CurrentlyReading'
 import Review from 'components/Review'
 import BottomNavBar from 'components/BottomNavBar'
+import Container from 'components/Container'
 import { SearchIcon } from 'components/Icons'
 
 import * as S from './styles'
@@ -17,7 +18,7 @@ const Home = () => {
 
   return (
     <S.Wrapper>
-      <S.Container>
+      <Container>
         <S.HeaderSection>
           <TextField
             name="book"
@@ -73,7 +74,7 @@ const Home = () => {
             weeksAgo={1}
           />
         </S.ReviewsSection>
-      </S.Container>
+      </Container>
 
       <BottomNavBar />
     </S.Wrapper>
