@@ -50,7 +50,7 @@ const Home = () => {
                 title="Currently Reading"
                 nav={{
                   title: 'All',
-                  path: '/book/originals'
+                  path: '/reading'
                 }}
               />
               <CurrentlyReading
@@ -66,7 +66,7 @@ const Home = () => {
                 title="Reviews of The Days"
                 nav={{
                   title: 'All Video',
-                  path: '/book/originals'
+                  path: '/reviews'
                 }}
               />
               <Review

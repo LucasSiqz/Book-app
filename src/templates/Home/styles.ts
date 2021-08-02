@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
 export const HeaderSection = styled.section`
   padding: 5rem 2rem 3rem 2rem;
 
-  > div:first-child {
-    margin-bottom: 3rem;
+  > div:nth-child(2) {
+    margin-top: 3rem;
   }
 `
 
