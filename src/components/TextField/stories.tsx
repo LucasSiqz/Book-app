@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
+
 import { SearchIcon } from '../Icons'
 
 import TextField, { TextFieldProps } from '.'
@@ -18,18 +20,34 @@ export default {
   }
 } as Meta
 
-export const Default: Story<TextFieldProps> = (args) => (
-  <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
-  </div>
-)
+export const Default: Story<TextFieldProps> = (args) => {
+  const [inputState, setInputState] = useState('')
 
-export const withError: Story<TextFieldProps> = (args) => (
-  <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
-  </div>
-)
+  return (
+    <div style={{ maxWidth: 300, padding: 15 }}>
+      <TextField
+        {...args}
+        value={inputState}
+        onChange={(event) => setInputState(event.target.value)}
+      />
+    </div>
+  )
+}
 
-withError.args = {
+export const WithError: Story<TextFieldProps> = (args) => {
+  const [inputState, setInputState] = useState('')
+
+  return (
+    <div style={{ maxWidth: 300, padding: 15 }}>
+      <TextField
+        {...args}
+        value={inputState}
+        onChange={(event) => setInputState(event.target.value)}
+      />
+    </div>
+  )
+}
+
+WithError.args = {
   error: 'Ops...something is wrong'
 }

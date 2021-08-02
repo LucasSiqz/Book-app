@@ -5,7 +5,6 @@ import * as S from './styles'
 export type TextFieldProps = {
   onInput?: (value: string) => void
   label?: string
-  initialValue?: string
   icon?: React.ReactNode
   iconPosition?: 'left' | 'right'
   disabled?: boolean
@@ -17,7 +16,6 @@ const TextField = ({
   label,
   iconPosition = 'left',
   name,
-  initialValue = '',
   error,
   disabled = false,
   ...props
@@ -29,7 +27,6 @@ const TextField = ({
         {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
         <S.Input
           type="text"
-          value={initialValue}
           iconPosition={iconPosition}
           disabled={disabled}
           name={name}

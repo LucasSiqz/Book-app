@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
 
     strong {
-      color: #313131;
+      color: rgba(49, 49, 49, 0.8);
       font-size: ${theme.font.sizes.xsmall};
     }
 
