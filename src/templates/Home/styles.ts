@@ -49,3 +49,11 @@ export const ReviewsSection = styled.section`
   padding-right: 2rem;
   padding-bottom: 6rem;
 `
+
+export const Grid = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  padding: 0 2rem;
+`
