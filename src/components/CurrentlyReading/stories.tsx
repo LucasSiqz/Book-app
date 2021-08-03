@@ -1,10 +1,12 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+
 import CurrentlyReading, { CurrentlyReadingProps } from '.'
 
 export default {
   title: 'CurrentlyReading',
   component: CurrentlyReading,
   args: {
+    id: 1,
     title: 'Originals',
     author: 'Adam Grant',
     currentChapter: 2,

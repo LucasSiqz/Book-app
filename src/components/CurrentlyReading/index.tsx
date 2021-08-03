@@ -1,8 +1,11 @@
+import { useRouter } from 'next/router'
+
 import { ChapterIcon } from '../Icons'
 
 import * as S from './styles'
 
 export type CurrentlyReadingProps = {
+  id: string
   title: string
   author: string
   image?: string
@@ -11,42 +14,47 @@ export type CurrentlyReadingProps = {
 }
 
 const CurrentlyReading = ({
+  id,
   title,
   author,
   image,
   currentChapter,
   chapterCount
-}: CurrentlyReadingProps) => (
-  <S.Wrapper>
-    <S.Image src={image || 'img/BookCover.png'} />
+}: CurrentlyReadingProps) => {
+  const { push } = useRouter()
 
-    <S.Info>
-      <S.Title>{title}</S.Title>
-      <S.Author>{`by ${author}`}</S.Author>
+  return (
+    <S.Wrapper onClick={() => push(`details/${id}`)}>
+      <S.Image src={image} />
 
-      <S.Chapter>
-        <ChapterIcon />
-        <p>Chapter</p>
-        <p>{currentChapter}</p>
-        <p>{`From ${chapterCount}`}</p>
-      </S.Chapter>
+      <S.Info>
+        <S.Title>{title}</S.Title>
+        <S.Author>{`by ${author}`}</S.Author>
 
-      {/* Visual Effects */}
-      <S.TopCircle src="img/topCircle.svg" />
-      <S.RightEffect>
-        <S.WaveCircle src="img/waveCircle.svg" />
-      </S.RightEffect>
-      <S.RightEffect>
-        <S.BottomCircle src="img/bottomCircle.svg" />
-      </S.RightEffect>
-      <S.RightEffect>
-        <S.Rectangle src="img/rectangle.svg" />
-      </S.RightEffect>
-      <S.RightEffect>
-        <S.BorderCircle src="img/borderCircle.svg" />
-      </S.RightEffect>
-    </S.Info>
-  </S.Wrapper>
-)
+        <S.Chapter>
+          <ChapterIcon />
+          <p>Chapter</p>
+          <p>{currentChapter}</p>
+          <p>{`From ${chapterCount}`}</p>
+        </S.Chapter>
+
+        {/* Visual Effects */}
+        <S.TopCircle src="img/topCircle.svg" />
+        <S.RightEffect>
+          <S.WaveCircle src="img/waveCircle.svg" />
+        </S.RightEffect>
+        <S.RightEffect>
+          <S.BottomCircle src="img/bottomCircle.svg" />
+        </S.RightEffect>
+        <S.RightEffect>
+          <S.Rectangle src="img/rectangle.svg" />
+        </S.RightEffect>
+        <S.RightEffect>
+          <S.BorderCircle src="img/borderCircle.svg" />
+        </S.RightEffect>
+      </S.Info>
+    </S.Wrapper>
+  )
+}
 
 export default CurrentlyReading

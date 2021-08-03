@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react'
 
 import api from 'services/api'
 
-import discoverMock from 'components/DiscoverCardSlider/mock'
 import TextField from 'components/TextField'
 import WelcomeMessage from 'components/WelcomeMessage'
 import Heading from 'components/Heading'
-import DiscoverCardSlider from 'components/DiscoverCardSlider'
-import CurrentlyReading from 'components/CurrentlyReading'
-import Review from 'components/Review'
+import DiscoverCardSlider, {
+  DiscoverCardSliderProps
+} from 'components/DiscoverCardSlider'
+import CurrentlyReading, {
+  CurrentlyReadingProps
+} from 'components/CurrentlyReading'
+import Review, { ReviewProps } from 'components/Review'
 import BottomNavBar from 'components/BottomNavBar'
 import Container from 'components/Container'
 import Book from 'components/Book'
@@ -27,7 +30,13 @@ type searchResult = {
   }
 }
 
-const Home = () => {
+export type HomeProps = {
+  discovery: DiscoverCardSliderProps
+  currentlyReading: CurrentlyReadingProps
+  review: ReviewProps
+}
+
+const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
   const [filter, setFilter] = useState('')
   const [result, setResult] = useState<searchResult[]>([])
 
@@ -70,7 +79,7 @@ const Home = () => {
                   path: '/books'
                 }}
               />
-              <DiscoverCardSlider items={discoverMock} />
+              <DiscoverCardSlider {...discovery} />
             </S.DiscoverSection>
 
             <S.CurrentlyReadingSection>
@@ -81,12 +90,7 @@ const Home = () => {
                   path: '/reading'
                 }}
               />
-              <CurrentlyReading
-                title="Originals"
-                author="Adam Grant"
-                currentChapter={2}
-                chapterCount={9}
-              />
+              <CurrentlyReading {...currentlyReading} />
             </S.CurrentlyReadingSection>
 
             <S.ReviewsSection>
@@ -97,13 +101,7 @@ const Home = () => {
                   path: '/reviews'
                 }}
               />
-              <Review
-                title="Don't Make Me Think"
-                author="Jesse Showalter"
-                description='"Dont Make Me Think" by Steve Krug is one of the first books I read when I was getting into digital design. It helped me move from designing things that just "look nice" to designing things that are usable, useful, memorable and simple to learn and use. '
-                viewsCount={5.2}
-                weeksAgo={1}
-              />
+              <Review {...review} />
             </S.ReviewsSection>
           </>
         ) : (
@@ -112,17 +110,20 @@ const Home = () => {
               result.map((item) => (
                 <Book
                   key={item.id}
+                  id={item.id}
                   title={item.volumeInfo.title}
                   author={
                     item.volumeInfo.authors
                       ? item.volumeInfo.authors[0]
-                      : 'unknow'
+                      : 'unknown'
                   }
                   image={item.volumeInfo.imageLinks?.smallThumbnail}
                 />
               ))
             ) : (
-              <p>Sem resultados</p>
+              <S.NoResults>
+                <p>Sem resultados</p>
+              </S.NoResults>
             )}
           </S.Grid>
         )}

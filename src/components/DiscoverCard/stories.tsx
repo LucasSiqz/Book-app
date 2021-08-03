@@ -5,6 +5,7 @@ export default {
   title: 'DiscoverCard',
   component: DiscoverCard,
   args: {
+    id: '1',
     title: 'Hooked',
     author: 'Nir Eyal',
     readCount: 120,

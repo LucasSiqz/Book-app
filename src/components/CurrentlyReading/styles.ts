@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     display: flex;
+    cursor: pointer;
     margin: 2rem 0;
     background: ${theme.colors.beige};
     padding-bottom: ${theme.spacings.xxsmall};
@@ -11,6 +12,13 @@ export const Wrapper = styled.div`
     box-shadow: 0px 3px 45px rgba(121, 141, 67, 0.115084);
     border-top-right-radius: ${theme.border.radius};
     border-bottom-left-radius: ${theme.border.radius};
+    transition: opacity ${theme.transition.fast};
+
+    @media (min-width: 700px) {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   `}
 `
 

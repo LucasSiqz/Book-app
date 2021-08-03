@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 import { SearchIcon } from '../Icons'
-
 import TextField, { TextFieldProps } from '.'
 
 export default {

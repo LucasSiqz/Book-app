@@ -1,10 +1,12 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+
 import Book, { BookProps } from '.'
 
 export default {
   title: 'Book',
   component: Book,
   args: {
+    id: '1',
     title: 'HOOKED',
     author: 'Nir Eyal',
     image: 'img/Book.png'

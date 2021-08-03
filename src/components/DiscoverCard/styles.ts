@@ -12,6 +12,13 @@ export const Wrapper = styled.div`
     padding: 1.5rem 2rem;
     overflow: hidden;
     max-width: 30.2rem;
+    transition: opacity ${theme.transition.fast};
+
+    @media (min-width: 700px) {
+      &:hover {
+        opacity: 0.95;
+      }
+    }
   `}
 `
 
@@ -56,8 +63,11 @@ export const Read = styled.div`
 `
 
 export const Image = styled.img`
-  width: 7.3rem;
-  height: 10.9rem;
+  ${({ theme }) => css`
+    width: 7.3rem;
+    height: 10.9rem;
+    border-radius: ${theme.border.radius};
+  `}
 `
 
 export const Triangle = styled.img`
