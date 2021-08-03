@@ -27,10 +27,12 @@ export const Author = styled.strong`
     color: ${theme.colors.pink};
   `}
 `
-export const Text = styled.p`
+export const Description = styled.div`
   ${({ theme }) => css`
-    color: ${theme.colors.gray};
+    color: ${theme.colors.alternativeGray};
     font-size: ${theme.font.sizes.small};
+    letter-spacing: 0.2px;
+    line-height: 2.5rem;
     padding-bottom: 12rem;
   `}
 `

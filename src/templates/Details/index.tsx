@@ -27,7 +27,9 @@ const Details = ({
           <strong>{title} </strong> {!!subtitle && `: ${subtitle}`}
         </S.Title>
         <S.Author>{author}</S.Author>
-        <S.Text>{description}</S.Text>
+        <S.Description>
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+        </S.Description>
       </S.Content>
     </Container>
     <OptionsBar />
