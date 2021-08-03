@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -54,11 +54,36 @@ export const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   grid-column-gap: 2rem;
-  grid-row-gap: 4rem;
-  padding: 0 2rem 9rem 2rem;
+  grid-row-gap: 1.4rem;
+  padding: 0 2rem;
 `
 
 export const Center = styled.div`
   margin: 0 auto;
   width: fit-content;
+`
+
+export const ResultContainer = styled.div`
+  padding-bottom: 8rem;
+`
+
+export const ShowMore = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+`
+
+export const ShowMoreButton = styled.div`
+  ${({ theme }) => css`
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: ${theme.colors.pink};
+    transition: opacity ${theme.transition.fast};
+
+    &:hover {
+      opacity: 0.8;
+    }
+  `}
 `
