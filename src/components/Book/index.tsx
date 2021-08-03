@@ -8,7 +8,7 @@ export type BookProps = {
 
 const Book = ({ title, author, image }: BookProps) => (
   <S.Wrapper>
-    <S.Image src={image || 'img/Book.png'} />
+    <S.Image src={image || 'img/cover.png'} />
     <strong>{title}</strong>
     <strong>{`by ${author}`}</strong>
   </S.Wrapper>

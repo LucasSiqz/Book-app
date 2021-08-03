@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+import api from 'services/api'
 
 import discoverMock from 'components/DiscoverCardSlider/mock'
 import TextField from 'components/TextField'
@@ -14,8 +16,34 @@ import { SearchIcon } from 'components/Icons'
 
 import * as S from './styles'
 
+type searchResult = {
+  id: string
+  volumeInfo: {
+    authors: string[]
+    title: string
+    imageLinks: {
+      smallThumbnail: string
+    }
+  }
+}
+
 const Home = () => {
   const [filter, setFilter] = useState('')
+  const [result, setResult] = useState<searchResult[]>([])
+
+  useEffect(() => {
+    if (filter) {
+      const timer = setTimeout(
+        () =>
+          api.get(`?q=${filter}`).then((item) => setResult(item.data.items)),
+        300
+      )
+
+      return () => {
+        clearTimeout(timer)
+      }
+    }
+  }, [filter])
 
   return (
     <S.Wrapper>
@@ -80,14 +108,22 @@ const Home = () => {
           </>
         ) : (
           <S.Grid>
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
-            <Book title="Hooked" author="Nir Eyal" />
+            {result && result.length > 0 ? (
+              result.map((item) => (
+                <Book
+                  key={item.id}
+                  title={item.volumeInfo.title}
+                  author={
+                    item.volumeInfo.authors
+                      ? item.volumeInfo.authors[0]
+                      : 'unknow'
+                  }
+                  image={item.volumeInfo.imageLinks?.smallThumbnail}
+                />
+              ))
+            ) : (
+              <p>Sem resultados</p>
+            )}
           </S.Grid>
         )}
       </Container>
