@@ -58,6 +58,7 @@ export const Grid = styled.section`
   padding: 0 2rem 9rem 2rem;
 `
 
-export const NoResults = styled.div`
+export const Center = styled.div`
   margin: 0 auto;
+  width: fit-content;
 `

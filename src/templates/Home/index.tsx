@@ -15,6 +15,7 @@ import Review, { ReviewProps } from 'components/Review'
 import BottomNavBar from 'components/BottomNavBar'
 import Container from 'components/Container'
 import Book from 'components/Book'
+import Loader from 'components/Loader'
 import { SearchIcon } from 'components/Icons'
 
 import * as S from './styles'
@@ -39,19 +40,28 @@ export type HomeProps = {
 
 const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
   const [filter, setFilter] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState<searchResult[]>([])
 
   useEffect(() => {
+    setIsLoading(true)
+    setResult([])
+
     if (filter) {
-      const timer = setTimeout(
-        () =>
-          api.get(`?q=${filter}`).then((item) => setResult(item.data.items)),
-        300
-      )
+      const timer = setTimeout(() => {
+        setIsLoading(true)
+        api
+          .get(`?q=${filter}`)
+          .then((item) => setResult(item.data.items))
+          .finally(() => setIsLoading(false))
+      }, 300)
 
       return () => {
         clearTimeout(timer)
       }
+    } else {
+      setResult([])
+      setIsLoading(false)
     }
   }, [filter])
 
@@ -105,6 +115,10 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
               <Review {...review} />
             </S.ReviewsSection>
           </>
+        ) : isLoading ? (
+          <S.Center>
+            <Loader />
+          </S.Center>
         ) : (
           <S.Grid>
             {result && result.length > 0 ? (
@@ -122,9 +136,9 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
                 />
               ))
             ) : (
-              <S.NoResults>
-                <p>Sem resultados</p>
-              </S.NoResults>
+              <S.Center>
+                <p>sem resultados</p>
+              </S.Center>
             )}
           </S.Grid>
         )}
