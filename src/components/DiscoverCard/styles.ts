@@ -35,6 +35,10 @@ export const Title = styled.strong`
     font-size: 2.7rem;
 
     font-family: 'Playfair Display', serif;
+
+    @media (max-width: 340px) {
+      font-size: 2rem;
+    }
   `}
 `
 

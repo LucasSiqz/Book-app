@@ -4,6 +4,12 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: opacity ${theme.transition.default};
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     strong {
       color: rgba(49, 49, 49, 0.8);

@@ -19,14 +19,16 @@ export const getServerSideProps = async ({ params }: ServerSideProps) => {
 
   return {
     props: {
-      image: book.volumeInfo.imageLinks.thumbnail || 'img/cover',
+      image:
+        (book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail) ||
+        '../img/cover.png',
       title: book.volumeInfo.title,
       subtitle: book.volumeInfo.subtitle || '',
       author:
         (book.volumeInfo.authors && book.volumeInfo.authors[0]) ||
         book.volumeInfo.publisher ||
         'unknown',
-      description: book.volumeInfo.description
+      description: book.volumeInfo.description || 'No description.'
     }
   }
 }
