@@ -87,7 +87,7 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
                 title="Discover new book"
                 nav={{
                   title: 'More',
-                  path: '/books'
+                  path: '/'
                 }}
               />
               <DiscoverCardSlider {...discovery} />
@@ -98,7 +98,7 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
                 title="Currently Reading"
                 nav={{
                   title: 'All',
-                  path: '/reading'
+                  path: '/'
                 }}
               />
               <CurrentlyReading {...currentlyReading} />
@@ -109,7 +109,7 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
                 title="Reviews of The Days"
                 nav={{
                   title: 'All Video',
-                  path: '/reviews'
+                  path: '/'
                 }}
               />
               <Review {...review} />
