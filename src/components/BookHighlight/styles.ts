@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    height: 28.2rem;
+    min-height: 28.2rem;
     background: ${theme.colors.highlight};
     border-bottom-right-radius: 10rem;
   `}
@@ -28,17 +28,20 @@ export const ArrowButton = styled.button`
 `
 
 export const Image = styled.img`
-  position: absolute;
-  width: 15.3rem;
-  height: 22.9rem;
-  filter: drop-shadow(0px 2px 4px rgba(229, 229, 229, 0.5));
-  bottom: -3.1rem;
-  z-index: 1;
+  ${({ theme }) => css`
+    position: absolute;
+    width: 15.3rem;
+    height: 22.9rem;
+    filter: drop-shadow(0px 2px 4px rgba(229, 229, 229, 0.5));
+    bottom: -3.1rem;
+    z-index: 1;
+    border-radius: ${theme.border.radius};
 
-  @media (min-width: 1000px) {
-    width: 18.3rem;
-    height: 25.9rem;
-  }
+    @media (min-width: 1000px) {
+      width: 18.3rem;
+      height: 25.9rem;
+    }
+  `}
 `
 
 export const WaveContainer = styled.div`

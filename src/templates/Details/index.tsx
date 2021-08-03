@@ -4,21 +4,30 @@ import OptionsBar from 'components/OptionsBar'
 
 import * as S from './styles'
 
-const Details = () => (
+export type DetailsProps = {
+  image: string
+  title: string
+  subtitle: string
+  author: string
+  description: string
+}
+
+const Details = ({
+  image,
+  title,
+  subtitle,
+  author,
+  description
+}: DetailsProps) => (
   <S.Wrapper>
-    <BookHighlight image="img/Book.png" />
+    <BookHighlight image={image} />
     <Container>
       <S.Content>
         <S.Title>
-          <strong>Hooked </strong> :How to Build Habid-Forming Products
+          <strong>{title} </strong> {!!subtitle && `: ${subtitle}`}
         </S.Title>
-        <S.Author>Nir Eyal</S.Author>
-        <S.Text>
-          How do successful companies create products people can’t put down? Why
-          do some products capture widespread attention while others flop?Why do
-          some products capture widespread attention while others flop?Why do
-          some products capture widespread attention while others flop?
-        </S.Text>
+        <S.Author>{author}</S.Author>
+        <S.Text>{description}</S.Text>
       </S.Content>
     </Container>
     <OptionsBar />

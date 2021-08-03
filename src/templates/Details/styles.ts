@@ -31,5 +31,6 @@ export const Text = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.gray};
     font-size: ${theme.font.sizes.small};
+    padding-bottom: 12rem;
   `}
 `

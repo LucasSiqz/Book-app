@@ -24,6 +24,7 @@ type searchResult = {
   volumeInfo: {
     authors: string[]
     title: string
+    publisher: string
     imageLinks: {
       smallThumbnail: string
     }
@@ -113,9 +114,9 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
                   id={item.id}
                   title={item.volumeInfo.title}
                   author={
-                    item.volumeInfo.authors
-                      ? item.volumeInfo.authors[0]
-                      : 'unknown'
+                    (item.volumeInfo.authors && item.volumeInfo.authors[0]) ||
+                    item.volumeInfo.publisher ||
+                    'unknown'
                   }
                   image={item.volumeInfo.imageLinks?.smallThumbnail}
                 />
