@@ -21,7 +21,7 @@ import { SearchIcon } from 'components/Icons'
 
 import * as S from './styles'
 
-type searchResult = {
+type SearchResult = {
   id: string
   volumeInfo: {
     authors: string[]
@@ -43,9 +43,10 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
   const [filter, setFilter] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
-  const [result, setResult] = useState<searchResult[]>([])
+  const [result, setResult] = useState<SearchResult[]>([])
   const [bookCount, setBookCount] = useState(0)
 
+  const MAX_RESULTS = 9
   const hasMoreBooks = result.length < (bookCount || 0)
 
   const getBooks = useCallback(
@@ -60,7 +61,7 @@ const Home = ({ discovery, currentlyReading, review }: HomeProps) => {
         const response = await api.get(`?q=${filter}`, {
           params: {
             startIndex: startIndex,
-            maxResults: 9
+            maxResults: MAX_RESULTS
           }
         })
         setBookCount(response.data.totalItems || 0)
