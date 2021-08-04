@@ -1,8 +1,9 @@
+import userEvent from '@testing-library/user-event'
 import { render, screen, waitFor } from 'utils/test-utils'
+
 import discoverMock from 'components/DiscoverCardSlider/mock'
 
 import Home from '.'
-import userEvent from '@testing-library/user-event'
 
 jest.mock('components/WelcomeMessage', () => {
   return {
@@ -137,7 +138,7 @@ describe('<Home />', () => {
     userEvent.type(input, text)
 
     await waitFor(
-      async () => {
+      () => {
         userEvent.click(screen.getByRole('button', { name: /Show More/i }))
         expect(screen.getByTestId('Mock Loader')).toBeInTheDocument()
       },

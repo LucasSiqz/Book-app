@@ -10,9 +10,24 @@
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
-## Getting Started
+## Screenshots
+- Home
+  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/home.png"/>
+- Search
+  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/search.png"/>
+- Details
+  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/details.png"/>
 
-First, run the development server:
+## Getting Started
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
