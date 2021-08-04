@@ -1,3 +1,18 @@
+<h1 align="center">
+Book App
+</h1>
+App based on mobile usage that has the functionality of search books and view then details.
+
+---
+
+
+## Screenshots
+
+  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
+  </br>
+  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
+  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
+
 ## This project uses lot of stuff as:
 
 - [TypeScript](https://www.typescriptlang.org/)
@@ -9,12 +24,6 @@
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
-
-## Screenshots
-  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
-  </br>
-  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
-  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
 
 ## Getting Started
 First, install the dependencies:
@@ -46,3 +55,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 
+## API
+Thia app use the [Google Books](https://developers.google.com/books/docs/v1/using)' API.
