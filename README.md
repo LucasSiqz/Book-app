@@ -1,7 +1,9 @@
 <h1 align="center">
 Book App
 </h1>
+<div align="center">
 App based on mobile usage that has the functionality of search books and view then details.
+</div>
 
 ---
 
@@ -9,7 +11,6 @@ App based on mobile usage that has the functionality of search books and view th
 ## Screenshots
 
   <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
-  </br>
   <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
   <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
 
