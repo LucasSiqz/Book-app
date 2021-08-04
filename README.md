@@ -57,4 +57,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `build-storybook`: create the build version of storybook
 
 ## API
-Thia app use the [Google Books](https://developers.google.com/books/docs/v1/using)' API.
+This app use the [Google Books](https://developers.google.com/books/docs/v1/using)' API.
