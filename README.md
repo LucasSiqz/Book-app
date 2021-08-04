@@ -11,12 +11,10 @@
 - [Husky](https://github.com/typicode/husky)
 
 ## Screenshots
-- Home
-  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/home.png"/>
-- Search
-  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/search.png"/>
-- Details
-  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/blob/master/public/img/details.png"/>
+  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
+  </br>
+  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
+  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
 
 ## Getting Started
 First, install the dependencies:
