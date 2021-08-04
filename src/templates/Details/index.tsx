@@ -7,7 +7,7 @@ import * as S from './styles'
 export type DetailsProps = {
   image: string
   title: string
-  subtitle: string
+  subtitle?: string
   author: string
   description: string
 }
