@@ -22,7 +22,7 @@ const DiscoverCard = ({
   const { push } = useRouter()
 
   return (
-    <S.Wrapper onClick={() => push(`details/${id}`)}>
+    <S.Wrapper data-testid={id} onClick={() => push(`details/${id}`)}>
       <S.Info>
         <S.Title>{title}</S.Title>
         <S.Author>{author}</S.Author>

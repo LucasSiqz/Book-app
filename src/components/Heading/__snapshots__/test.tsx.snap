@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.c1 {
+  color: #3F4043;
+  font-size: 1.8rem;
+}
+
+.c2 a {
+  font-size: 1.4rem;
+  color: #4ABDF1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    Discover new book
+  </h2>
+  <nav
+    aria-labelledby="section navigation"
+    class="c2"
+  >
+    <a
+      href="/books"
+    >
+      More
+    </a>
+  </nav>
+</div>
+`

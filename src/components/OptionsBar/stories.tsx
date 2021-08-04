@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+import styled from 'styled-components'
 
 import OptionsBar from '.'
 
@@ -7,4 +8,14 @@ export default {
   component: OptionsBar
 } as Meta
 
-export const Default: Story = () => <OptionsBar />
+const RemovePositionFixed = styled.div`
+  > footer {
+    position: unset !important;
+  }
+`
+
+export const Default: Story = () => (
+  <RemovePositionFixed>
+    <OptionsBar />
+  </RemovePositionFixed>
+)

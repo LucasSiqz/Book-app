@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookHighlight /> should render correctly 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 28.2rem;
+  background: #FFF6E5;
+  border-bottom-right-radius: 10rem;
+}
+
+.c1 {
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 5.5rem;
+  margin-left: 3.3rem;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.c1:hover {
+  opacity: 0.7;
+}
+
+.c2 {
+  position: absolute;
+  width: 15.3rem;
+  height: 22.9rem;
+  -webkit-filter: drop-shadow(0px 2px 4px rgba(229,229,229,0.5));
+  filter: drop-shadow(0px 2px 4px rgba(229,229,229,0.5));
+  bottom: -3.1rem;
+  z-index: 1;
+  border-radius: 0.4rem;
+}
+
+.c7 {
+  position: relative;
+  margin-left: auto;
+  height: 12rem;
+  width: 6rem;
+  overflow: hidden;
+}
+
+.c8 {
+  position: absolute;
+  top: -3rem;
+  right: -5.5rem;
+  overflow: hidden;
+}
+
+.c6 {
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  top: 22.5rem;
+  right: 9.2rem;
+}
+
+.c5 {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 8.7rem;
+  right: 10.2rem;
+}
+
+.c4 {
+  position: absolute;
+  width: 6.3rem;
+  height: 6.3rem;
+  top: 10.5rem;
+  left: 8rem;
+}
+
+.c3 {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 11.5rem;
+  left: 5rem;
+}
+
+@media (min-width:1000px) {
+  .c2 {
+    width: 18.3rem;
+    height: 25.9rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <button
+    class="c1"
+    title="Go back"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 8H1"
+        stroke="black"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      />
+      <path
+        d="M8 15L1 8L8 1"
+        stroke="black"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      />
+    </svg>
+  </button>
+  <img
+    alt="book cover"
+    class="c2"
+    src="../img/cover.png"
+  />
+  <img
+    class="c3"
+    src="../img/pinkCircle.svg"
+  />
+  <img
+    class="c4"
+    src="../img/darkBlueCircle.svg"
+  />
+  <img
+    class="c5"
+    src="../img/borderCircle.svg"
+  />
+  <img
+    class="c6"
+    src="../img/waveCircle.svg"
+  />
+  <div
+    class="c7"
+  >
+    <img
+      class="c8"
+      src="../img/waveCircle.svg"
+    />
+  </div>
+</div>
+`

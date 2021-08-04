@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CurrentlyReading > should render correctly 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  margin: 2rem 0;
+  background: #EEF5DB;
+  padding-bottom: 0.8rem;
+  padding-top: 1.6rem;
+  box-shadow: 0px 3px 45px rgba(121,141,67,0.115084);
+  border-top-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.c1 {
+  position: absolute;
+  left: 2rem;
+  top: -1.2rem;
+  height: 13rem;
+  width: 8.8rem;
+  -webkit-filter: drop-shadow(5px 7px 32px rgba(140,170,58,0.193701));
+  filter: drop-shadow(5px 7px 32px rgba(140,170,58,0.193701));
+}
+
+.c2 {
+  margin-left: 11.8rem;
+}
+
+.c3 {
+  font-family: 'Playfair Display',serif;
+  -webkit-letter-spacing: 0.2rem;
+  -moz-letter-spacing: 0.2rem;
+  -ms-letter-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  color: #74776D;
+  margin-top: 0.5rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+
+.c5 svg {
+  margin-right: 0.3rem;
+}
+
+.c5 p {
+  font-size: 1.2rem;
+}
+
+.c5 p:nth-child(3) {
+  color: #FF6978;
+  font-weight: bold;
+  margin: 0 0.3rem;
+}
+
+.c7 {
+  position: absolute;
+  overflow: hidden;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+}
+
+.c6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c9 {
+  margin-right: -2.2rem;
+  margin-top: 2.2rem;
+}
+
+.c8 {
+  width: 8rem;
+  height: 8rem;
+  margin-top: -2.3rem;
+  margin-right: -3.6rem;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+.c10 {
+  margin-top: 6rem;
+  margin-right: -2.3rem;
+}
+
+.c11 {
+  margin-right: 9rem;
+  margin-top: -1rem;
+}
+
+@media (min-width:700px) {
+  .c0:hover {
+    opacity: 0.8;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="1"
+>
+  <img
+    alt="Originals"
+    class="c1"
+    src="img/BookCover.png"
+  />
+  <div
+    class="c2"
+  >
+    <h2
+      class="c3"
+    >
+      Originals
+    </h2>
+    <p
+      class="c4"
+    >
+      by Adam Grant
+    </p>
+    <div
+      class="c5"
+    >
+      <svg
+        fill="none"
+        height="16"
+        viewBox="0 0 34 33"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          id="#031"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M10.2377 16.2539C10.2377 17.2863 11.3771 17.924 12.2727 17.3929L14.9406 15.8106L17.6084 17.3929C18.504 17.924 19.6434 17.2863 19.6434 16.2539V2.97188C19.6434 2.23833 19.0419 1.64368 18.2998 1.64368H11.5814C10.8393 1.64368 10.2377 2.23833 10.2377 2.97188V16.2539ZM14.2494 13.1226L12.9252 13.908V4.29997H16.9562V13.908L15.632 13.1226C15.2065 12.8702 14.6749 12.8702 14.2494 13.1226Z"
+            fill="#E66CFF"
+            fill-opacity="0.98"
+            fill-rule="evenodd"
+            id="ç©å½¢"
+          />
+          <path
+            d="M7.55028 4.30009H22.3308C24.5571 4.30009 26.3618 6.08406 26.3618 8.2847V24.2232C26.3618 26.4238 24.5571 28.2078 22.3308 28.2078H8.89396C8.15187 28.2078 7.55028 28.8024 7.55028 29.536C7.55028 30.2695 8.15187 30.8642 8.89396 30.8642H22.3308C26.0413 30.8642 29.0492 27.8909 29.0492 24.2232V8.2847C29.0492 4.61697 26.0413 1.64368 22.3308 1.64368H6.2066C5.4645 1.64368 4.86292 2.23833 4.86292 2.97188V24.2232C4.86292 24.9567 5.4645 25.5514 6.2066 25.5514C6.94869 25.5514 7.55028 24.9567 7.55028 24.2232V4.30009Z"
+            fill="#9013FE"
+            id="è·¯å¾"
+          />
+          <ellipse
+            cx="22.3307"
+            cy="24.223"
+            fill="#FF9F00"
+            id="æ¤­åå½¢"
+            rx="1.34368"
+            ry="1.32821"
+          />
+        </g>
+      </svg>
+      <p>
+        Chapter
+      </p>
+      <p>
+        2
+      </p>
+      <p>
+        From 9
+      </p>
+    </div>
+    <img
+      class="c6"
+      src="img/topCircle.svg"
+    />
+    <div
+      class="c7"
+    >
+      <img
+        class="c8"
+        src="img/waveCircle.svg"
+      />
+    </div>
+    <div
+      class="c7"
+    >
+      <img
+        class="c9"
+        src="img/bottomCircle.svg"
+      />
+    </div>
+    <div
+      class="c7"
+    >
+      <img
+        class="c10"
+        src="img/rectangle.svg"
+      />
+    </div>
+    <div
+      class="c7"
+    >
+      <img
+        class="c11"
+        src="img/borderCircle.svg"
+      />
+    </div>
+  </div>
+</div>
+`

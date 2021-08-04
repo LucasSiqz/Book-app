@@ -9,6 +9,7 @@ export default {
     id: 1,
     title: 'Originals',
     author: 'Adam Grant',
+    image: 'img/BookCover.png',
     currentChapter: 2,
     chapterCount: 9
   }
