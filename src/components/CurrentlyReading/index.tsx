@@ -24,8 +24,8 @@ const CurrentlyReading = ({
   const { push } = useRouter()
 
   return (
-    <S.Wrapper onClick={() => push(`details/${id}`)}>
-      <S.Image src={image} />
+    <S.Wrapper data-testid={id} onClick={() => push(`details/${id}`)}>
+      <S.Image src={image} alt={title} />
 
       <S.Info>
         <S.Title>{title}</S.Title>

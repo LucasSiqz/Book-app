@@ -13,8 +13,8 @@ const Book = ({ id, title, author, image }: BookProps) => {
   const { push } = useRouter()
 
   return (
-    <S.Wrapper onClick={() => push(`details/${id}`)}>
-      <S.Image src={image || 'img/cover.png'} />
+    <S.Wrapper data-testid={id} onClick={() => push(`details/${id}`)}>
+      <S.Image src={image || 'img/cover.png'} alt={title} />
       <strong>{title}</strong>
       <strong>{`by ${author}`}</strong>
     </S.Wrapper>
