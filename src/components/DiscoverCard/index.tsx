@@ -10,6 +10,7 @@ export type DiscoverCardProps = {
   author: string
   readCount: number
   image: string
+  background?: string
 }
 
 const DiscoverCard = ({
@@ -17,12 +18,17 @@ const DiscoverCard = ({
   title,
   author,
   readCount,
-  image
+  image,
+  background = '#00173d'
 }: DiscoverCardProps) => {
   const { push } = useRouter()
 
   return (
-    <S.Wrapper data-testid={id} onClick={() => push(`details/${id}`)}>
+    <S.Wrapper
+      data-testid={id}
+      background={background}
+      onClick={() => push(`details/${id}`)}
+    >
       <S.Info>
         <S.Title>{title}</S.Title>
         <S.Author>{author}</S.Author>

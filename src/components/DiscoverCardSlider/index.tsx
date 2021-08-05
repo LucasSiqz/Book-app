@@ -52,7 +52,14 @@ const settings: SliderSettings = {
 const DiscoverCardSlider = ({ items }: DiscoverCardSliderProps) => (
   <S.Wrapper>
     <Slider settings={settings}>
-      {items && items.map((item) => <DiscoverCard key={item.id} {...item} />)}
+      {items &&
+        items.map((item, idx) => (
+          <DiscoverCard
+            key={item.id}
+            background={(idx + 1) % 2 === 0 ? '#451475' : '#00173d'}
+            {...item}
+          />
+        ))}
     </Slider>
   </S.Wrapper>
 )

@@ -1,13 +1,17 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
+type WrapperProps = {
+  background: string
+}
+
+export const Wrapper = styled.div<WrapperProps>`
+  ${({ theme, background }) => css`
     position: relative;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00173d;
+    background: ${background};
     border-radius: ${theme.border.radius};
     padding: 1.5rem 2rem;
     overflow: hidden;
