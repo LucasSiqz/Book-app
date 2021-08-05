@@ -70,12 +70,26 @@ export const Chapter = styled.div`
   `}
 `
 
-export const RightEffect = styled.div`
+type EffectProps = {
+  mask?: boolean
+}
+
+const EffectModifier = {
+  mask: css`
+    opacity: 0.06;
+  `,
+  default: css`
+    overflow: hidden;
+  `
+}
+
+export const Effect = styled.div<EffectProps>`
   position: absolute;
-  overflow: hidden;
   right: 0px;
   top: 0px;
   height: 100%;
+
+  ${({ mask }) => (mask ? EffectModifier.mask : EffectModifier.default)}
 `
 
 export const TopCircle = styled.img`
@@ -92,14 +106,14 @@ export const BottomCircle = styled.img`
 export const WaveCircle = styled.img`
   width: 8rem;
   height: 8rem;
-  margin-top: -2.3rem;
+  margin-top: -2.4rem;
   margin-right: -3.6rem;
   transform: rotate(-25deg);
 `
 
 export const Rectangle = styled.img`
   margin-top: 6rem;
-  margin-right: -2.3rem;
+  margin-right: -2rem;
 `
 
 export const BorderCircle = styled.img`

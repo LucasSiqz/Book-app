@@ -75,10 +75,18 @@ exports[`<CurrentlyReading > should render correctly 1`] = `
 
 .c7 {
   position: absolute;
-  overflow: hidden;
   right: 0px;
   top: 0px;
   height: 100%;
+  overflow: hidden;
+}
+
+.c10 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  opacity: 0.06;
 }
 
 .c6 {
@@ -87,27 +95,27 @@ exports[`<CurrentlyReading > should render correctly 1`] = `
   left: 0;
 }
 
-.c9 {
+.c8 {
   margin-right: -2.2rem;
   margin-top: 2.2rem;
 }
 
-.c8 {
+.c9 {
   width: 8rem;
   height: 8rem;
-  margin-top: -2.3rem;
+  margin-top: -2.4rem;
   margin-right: -3.6rem;
   -webkit-transform: rotate(-25deg);
   -ms-transform: rotate(-25deg);
   transform: rotate(-25deg);
 }
 
-.c10 {
+.c11 {
   margin-top: 6rem;
-  margin-right: -2.3rem;
+  margin-right: -2rem;
 }
 
-.c11 {
+.c12 {
   margin-right: 9rem;
   margin-top: -1rem;
 }
@@ -195,14 +203,6 @@ exports[`<CurrentlyReading > should render correctly 1`] = `
     >
       <img
         class="c8"
-        src="img/waveCircle.svg"
-      />
-    </div>
-    <div
-      class="c7"
-    >
-      <img
-        class="c9"
         src="img/bottomCircle.svg"
       />
     </div>
@@ -210,8 +210,16 @@ exports[`<CurrentlyReading > should render correctly 1`] = `
       class="c7"
     >
       <img
-        class="c10"
-        src="img/rectangle.svg"
+        class="c9"
+        src="img/waveCircle.svg"
+      />
+    </div>
+    <div
+      class="c10"
+    >
+      <img
+        class="c9"
+        src="img/waveCircle.svg"
       />
     </div>
     <div
@@ -219,6 +227,30 @@ exports[`<CurrentlyReading > should render correctly 1`] = `
     >
       <img
         class="c11"
+        src="img/rectangle.svg"
+      />
+    </div>
+    <div
+      class="c10"
+    >
+      <img
+        class="c11"
+        src="img/rectangle.svg"
+      />
+    </div>
+    <div
+      class="c7"
+    >
+      <img
+        class="c12"
+        src="img/borderCircle.svg"
+      />
+    </div>
+    <div
+      class="c10"
+    >
+      <img
+        class="c12"
         src="img/borderCircle.svg"
       />
     </div>

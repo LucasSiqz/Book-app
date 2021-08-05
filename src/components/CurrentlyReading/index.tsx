@@ -40,18 +40,27 @@ const CurrentlyReading = ({
 
         {/* Visual Effects */}
         <S.TopCircle src="img/topCircle.svg" />
-        <S.RightEffect>
-          <S.WaveCircle src="img/waveCircle.svg" />
-        </S.RightEffect>
-        <S.RightEffect>
+        <S.Effect>
           <S.BottomCircle src="img/bottomCircle.svg" />
-        </S.RightEffect>
-        <S.RightEffect>
+        </S.Effect>
+        <S.Effect>
+          <S.WaveCircle src="img/waveCircle.svg" />
+        </S.Effect>
+        <S.Effect mask>
+          <S.WaveCircle src="img/waveCircle.svg" />
+        </S.Effect>
+        <S.Effect>
           <S.Rectangle src="img/rectangle.svg" />
-        </S.RightEffect>
-        <S.RightEffect>
+        </S.Effect>
+        <S.Effect mask>
+          <S.Rectangle src="img/rectangle.svg" />
+        </S.Effect>
+        <S.Effect>
           <S.BorderCircle src="img/borderCircle.svg" />
-        </S.RightEffect>
+        </S.Effect>
+        <S.Effect mask>
+          <S.BorderCircle src="img/borderCircle.svg" />
+        </S.Effect>
       </S.Info>
     </S.Wrapper>
   )
