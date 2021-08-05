@@ -2,7 +2,7 @@
 Book App
 </h1>
 <div align="center">
-App based on mobile usage that has the functionality of search books and view then details.
+App based on mobile usage that has the functionality of search books and view them details.
 </div>
 
 ---
