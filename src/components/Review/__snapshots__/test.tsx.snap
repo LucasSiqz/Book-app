@@ -10,7 +10,6 @@ exports[`<Review > should render correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 33.5rem;
 }
 
 .c1 {
@@ -64,6 +63,12 @@ exports[`<Review > should render correctly 1`] = `
   color: #6b6b6b;
   font-size: 1.2rem;
   margin-top: 0.5rem;
+}
+
+@media (min-width:700px) {
+  .c0 {
+    max-width: 33.5rem;
+  }
 }
 
 <div

@@ -58,3 +58,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## API
 This app use the [Google Books](https://developers.google.com/books/docs/v1/using)' API.
+
+<br/>
+
+> The application is available at [https://book-app-flame.vercel.app/](https://book-app-flame.vercel.app/) and if it's opened on a cell phone can be installed.

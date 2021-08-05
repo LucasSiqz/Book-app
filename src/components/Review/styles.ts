@@ -4,7 +4,10 @@ export const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 33.5rem;
+
+  @media (min-width: 700px) {
+    max-width: 33.5rem;
+  }
 `
 
 export const Image = styled.img`
