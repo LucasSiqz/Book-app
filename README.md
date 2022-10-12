@@ -7,12 +7,11 @@ App based on mobile usage that has the functionality of search books and view th
 
 ---
 
-
-## Screenshots
-
-  <img alt="Home" title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
-  <img alt="Search" title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
-  <img alt="Details" title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
+<div align="center" style={{ display: flex }}>
+  <img alt="Home" width=30% title="Home" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/home.png"/>
+  <img alt="Search" width=30.4% title="Search" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/search.png"/>
+  <img alt="Details" width=30.4% title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
+</div>
 
 ## This project uses lot of stuff as:
 
