@@ -41,6 +41,10 @@ describe('<Book >', () => {
       'src',
       'img/cover.png'
     )
+    expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
+      'alt',
+      props.title
+    )
   })
 
   it('should redirect to details page', () => {
