@@ -1,5 +1,5 @@
 <h1 align="center">
-Book App
+📚 Book App 📚
 </h1>
 <div align="center">
 App based on mobile usage that has the functionality of search books and view them details.
@@ -25,7 +25,7 @@ App based on mobile usage that has the functionality of search books and view th
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
-## Getting Started
+## ✅ Getting Started
 First, install the dependencies:
 
 ```bash
@@ -44,7 +44,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Commands
+## 📝 Commands 
 
 - `dev`: runs your application on `localhost:3000`
 - `build`: creates the production build version
@@ -55,7 +55,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 
-## API
+## 🌐 API
 This app use the [Google Books](https://developers.google.com/books/docs/v1/using)' API.
 
 <br/>
