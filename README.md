@@ -13,7 +13,7 @@ App based on mobile usage that has the functionality of search books and view th
   <img alt="Details" width=30.4% title="Details" src="https://raw.githubusercontent.com/LucasSiqz/book-app/master/public/img/details.png"/>
 </div>
 
-## This project uses lot of stuff as:
+## ⚙️ This project uses lot of stuff as:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
