@@ -144,5 +144,12 @@ describe('<Home />', () => {
       },
       { timeout: 1500 }
     )
+
+    await waitFor(
+      () => {
+        expect(screen.getAllByTestId('Mock Book')).toHaveLength(18)
+      },
+      { timeout: 1500 }
+    )
   })
 })
