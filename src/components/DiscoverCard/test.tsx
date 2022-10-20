@@ -35,6 +35,12 @@ describe('<DiscoverCard >', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 
+  it('should render with different background', () => {
+    render(<DiscoverCard {...props} background="#451475" />)
+
+    expect(screen.getByTestId(props.id)).toHaveStyle({ background: '#451475' })
+  })
+
   it('should redirect to details page', () => {
     render(<DiscoverCard {...props} />)
 
